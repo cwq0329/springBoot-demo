@@ -19,6 +19,7 @@ public class BootHelloWorld {
     public String hello(){
         System.out.println("hello method is running. ");
         return "hello SpringBoot";
+        //开发人员写了一句话
     }
 
     @RequestMapping("/user/{id}")
