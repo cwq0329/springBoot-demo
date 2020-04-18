@@ -17,7 +17,7 @@ public class BootHelloWorld {
     @RequestMapping("/hello")
     @ResponseBody
     public String hello() {
-        System.out.println("hello method is running.项目经理123 ");
+        System.out.println("hello method is running.项目经理123456 ");
         return "hello SpringBoot";
         //开发人员写了一句话
     }
