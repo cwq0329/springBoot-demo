@@ -16,15 +16,15 @@ public class BootHelloWorld {
 
     @RequestMapping("/hello")
     @ResponseBody
-    public String hello(){
-        System.out.println("hello method is running. 开发人员");
+    public String hello() {
+        System.out.println("hello method is running.项目经理 ");
         return "hello SpringBoot";
         //开发人员写了一句话
     }
 
     @RequestMapping("/user/{id}")
     @ResponseBody
-    public User user(@PathVariable("id") Long id){
-       return userService.queryById(id);
+    public User user(@PathVariable("id") Long id) {
+        return userService.queryById(id);
     }
 }
