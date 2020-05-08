@@ -17,7 +17,9 @@ import java.util.concurrent.TimeUnit;
  */
 @Slf4j
 public class StringTest {
+
     public static void main(String[] args) throws InterruptedException {
+        new ArrayList<>();
 
 //        ArrayList
 
@@ -166,13 +168,7 @@ public class StringTest {
         System.out.println(sb.reverse().toString());
     }
 
-    /**
-     * @description: //获取两个字符串的最大相同字串
-     * @author: cwq
-     * @date: 2020/4/4 23:54
-     * @param:
-     * @return:
-     **/
+
     private static String getMaxSubstring(String s1, String s2) {
         String max, min;
         max = s1.length() > s2.length() ? s1 : s2;
@@ -232,8 +228,7 @@ public class StringTest {
      * @return:
      **/
     private static void sortString(String[] countries) {
-        for (int i = 0;
-             i < countries.length - 1; i++) {
+        for (int i = 0; i < countries.length - 1; i++) {
             for (int j = 0; j < countries.length - 1; j++) {
                 if (countries[j].compareTo(countries[j + 1]) > 0) {
                     String temp = countries[i];
