@@ -24,6 +24,7 @@ public class BootHelloWorld {
     public String hello() {
 
         System.out.println("hello method is running.项目经理123456 ");
+        System.out.println("分支");
 
         return "hello SpringBoot";
         //开发人员写了一句话
